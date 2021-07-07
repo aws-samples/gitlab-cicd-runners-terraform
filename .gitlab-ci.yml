@@ -1,0 +1,31 @@
+image: node
+
+services:
+  - postgres:9.3
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - .npm/
+
+before_script:
+  - npm ci --cache .npm --prefer-offline
+
+build-job:
+  stage: build
+  tags:
+    - dev
+  script:
+    - aws sts get-caller-identity
+    - aws s3api list-buckets
+    - npm run test
+
+deploy-job:
+  stage: deploy
+  tags:
+    - prod
+  script:
+    - aws sts get-caller-identity
