@@ -88,11 +88,11 @@ This approach favours teams owning their CI Runner and Workers in a dedicated ac
 
 **Example using private subnets with NAT Gateway**
 
-![Distributed CI example](./shared_networking/private_subnets.png)
+![Distributed CI example](shared_networking/private_subnets.png)
 
 **Example using public subnets instead**
 
-![Distributed CI with public subnets](./shared_networking/public_subnets.png)
+![Distributed CI with public subnets](shared_networking/public_subnets.png)
 
 #### Requirement
 
