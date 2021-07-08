@@ -149,6 +149,10 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 [gitlab-tags]: https://docs.gitlab.com/ee/topics/git/tags.html
 [vpc-sharing-billing]: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-share-billing
 
+## Credits
+
+Terraform module for AWS GitLab runners on EC2 from [Niek Palm](https://github.com/npalm/terraform-aws-gitlab-runner).
+
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
